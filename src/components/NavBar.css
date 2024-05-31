@@ -95,6 +95,15 @@
     justify-content: flex-end;
 }
 
+.menu-preview{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-preview img{
+width: 100px;
+}
+
 @media (max-width: 900px) {
     .menu-close-icon{
         display: none;
@@ -113,4 +122,10 @@
     .menu-info-col p{
         white-space: nowrap;
     }
+    .menu-preview{
+        margin-bottom: 5rem;
+    }
+    .menu-preview img{
+        width: 100px;
+        }
 }

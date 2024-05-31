@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import Logo from "../assets/JC-b.png"
+import Arrow from "../assets/arrowW.png"
 
 const NavBar = () => {
     const menuLinks = [
@@ -97,6 +98,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className="menu-preview">
+                    <img src={Arrow} alt="" />
                     <p>219LABS</p>
                 </div>
             </div>
