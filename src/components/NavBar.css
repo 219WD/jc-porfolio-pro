@@ -105,4 +105,8 @@
     .menu-link-item-holder a {
         font-size: 60px;
     }
+    .menu-info{
+        display: flex;
+        flex-direction: column;
+    }
 }
