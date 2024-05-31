@@ -110,4 +110,7 @@
         flex-direction: column;
         margin-bottom: 5rem;
     }
+    .menu-info-col p{
+        white-space: nowrap;
+    }
 }
