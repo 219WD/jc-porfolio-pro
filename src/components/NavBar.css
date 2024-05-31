@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 900px) {
+    .menu-close-icon{
+        display: none;
+    }
     .menu-copy{
         padding-top: 8em;
     }
