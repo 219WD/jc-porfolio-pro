@@ -255,11 +255,12 @@ button {
   .color3 {
     width: 80vw; 
     height: 10vh; 
-    top: -19.5rem; 
+    top: -17rem; 
   }
 
   .text h1 {
-    font-size: 60px;
+    font-size: 55px;
+    white-space: nowrap;
   }
 
   .text h2 {
