@@ -237,15 +237,15 @@ button {
 
   .foto {
     position: relative; 
-    top: -4rem; 
-    left: -2rem; 
+    top: -5rem; 
+    left: -2.5rem; 
     margin: auto; 
   }
 
   .color {
     width: 80vw; 
     height: 20vh; 
-    top: -16rem; 
+    top: -24rem; 
   }
 
   .color2 {
@@ -255,7 +255,7 @@ button {
   .color3 {
     width: 80vw; 
     height: 10vh; 
-    top: -17rem; 
+    top: -21rem; 
   }
 
   .text h1 {
