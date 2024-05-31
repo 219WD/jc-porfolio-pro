@@ -4,6 +4,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centramos verticalmente */
+  align-items: center; /* Centramos horizontalmente */
 }
 
 .hero {
@@ -12,6 +14,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  flex-wrap: wrap; 
 }
 
 .img {
@@ -154,7 +157,7 @@ button {
 }
 
 .button-icon .button-github {
-  text-decoration: none;/
+  text-decoration: none;
 }
 
 .icon {
@@ -220,27 +223,29 @@ button {
 
   .img {
     width: 100%;
-    height: 50%;
+    height: 10%; 
     padding: 0;
-    margin: auto;
+    margin: 0;
   }
+
 
   .text {
     width: 100%;
-    height: 50%;
+    height: 50%; 
+    margin-top: -20rem; 
   }
 
   .foto {
-    position: absolute;
-    top: 3.4rem;
-    left: 0;
-    z-index: 1;
+    position: relative; 
+    top: -2rem; 
+    left: -2rem; 
+    margin: auto; 
   }
 
   .color {
-    width: 65vw;
-    height: 40vh;
-    top: 0;
+    width: 80vw; 
+    height: 20vh; 
+    top: -20rem; 
   }
 
   .color2 {
@@ -248,22 +253,26 @@ button {
   }
 
   .color3 {
-    width: 70vw;
-    height: 5vh;
-    top: 0;
+    width: 80vw; 
+    height: 10vh; 
+    top: -19.5rem; 
   }
 
   .text h1 {
     font-size: 60px;
   }
-  
+
   .text h2 {
     font-size: 30px;
-    font-weight: 500;
-    color: #cf5b45;
-    text-align: center;
   }
-  .buttons{
+
+  .buttons {
     flex-direction: column;
+    gap: 20px; 
+  }
+
+  .button-cv {
+    font-size: 19px; 
+    padding: 15px 50px; 
   }
 }
