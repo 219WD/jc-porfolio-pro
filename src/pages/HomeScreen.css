@@ -4,8 +4,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centramos verticalmente */
-  align-items: center; /* Centramos horizontalmente */
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
 }
 
 .hero {

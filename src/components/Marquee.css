@@ -1,0 +1,50 @@
+/* Marquee.css */
+
+.marquee-container {
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  padding: 10px 0;
+  margin-top: 20vh;
+  font-size: 100px;
+  position: relative;
+  color: rgb();
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-right: 200%;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+/* Ocultar el contenido fuera del contenedor */
+.marquee-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.marquee {
+  position: relative;
+  z-index: 2;
+}
+
+.marquee-content span{
+  -webkit-text-stroke: 1px rgb(207, 91, 69);
+}

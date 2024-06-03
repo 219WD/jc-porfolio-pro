@@ -2,12 +2,15 @@ import React, { useRef, useEffect } from 'react';
 import SinFondo from "../assets/yo-sin-fondo.png";
 import "../pages/HomeScreen.css";
 import { gsap } from "gsap";
+import Marquee from '../components/Marquee';
+import Proyects from "../components/Proyects"
+import Skills from '../components/Skills';
 
 const HomeScreen = () => {
   const tl = useRef(null);
 
   useEffect(() => {
-    gsap.set(".img, .text", { y: 75, opacity: 0});
+    gsap.set(".img, .text", { y: 75, opacity: 0 });
 
     tl.current = gsap.timeline({ paused: true })
       .to(".img, .text", {
@@ -57,6 +60,18 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
+
+      <section>
+        <Marquee />
+      </section>
+
+      <section>
+        <Proyects />
+      </section>      
+      
+      <section>
+        <Skills />
+      </section>
     </div>
   );
 }
