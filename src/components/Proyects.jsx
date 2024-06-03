@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css';
+import './Proyects.css';
 import proyecto1 from '../assets/Captura de pantalla_2-6-2024_185612_stockmanager-oficial.vercel.app.jpeg';
 import proyecto2 from '../assets/Captura de pantalla_2-6-2024_185319_mr-contables.vercel.app.jpeg';
 import proyecto3 from '../assets/Captura de pantalla_2-6-2024_185527_ntesteticaysalud.vercel.app.jpeg';
@@ -18,16 +18,23 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects">
-      {projects.map((project, index) => (
-        <div key={index} className="project-card">
-          <img src={project.image} alt={project.title} />
-          <h3>{project.title}</h3>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-        </div>
-      ))}
+    <section className="projects-section">
+    <div className="title-section">
+    <h2>Mis Proyectos</h2>
+    <p className='parrafo'>Realice estos proyectos para practicar en diferentes etapas de mi proceso como desarrollador full stack.</p>
     </div>
+    <div className="projects-grid">
+        {projects.map((project, index) => (
+            <div key={index} className="project-card">
+                <div className="project-image-container">
+                    <a href={project.link} target="_blank"><img src={project.image} alt={project.title} className="project-image" /></a>
+                </div>
+            </div>
+        ))}
+    </div>
+</section>
   );
 };
 
 export default Projects;
+
