@@ -4,7 +4,6 @@
     width: 100vw;
     background-image: url(../assets/bg9.jpg);
     background-position: center;
-
     padding: 2rem 5rem;
 }
 
@@ -56,6 +55,9 @@ h3 {
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
+    .skills-section {
+        padding: 20px;
+    }
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 1rem;
