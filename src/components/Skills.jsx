@@ -9,6 +9,7 @@ import mongoDb from '../assets/mongodb-icon-1.svg';
 import git from '../assets/git-icon.svg';
 import bootstrap from '../assets/bootstrap-5-1.svg';
 import gsap from '../assets/gsap-greensock.svg';
+import express from '../assets/express-109.svg'
 
 const Skills = () => {
   const skills = [
@@ -21,6 +22,7 @@ const Skills = () => {
     { name: 'Git', image: git },
     { name: 'Bootstrap', image: bootstrap },
     { name: 'Gsap', image: gsap },
+    { name: 'Express', image: express },
   ];
 
   return (
