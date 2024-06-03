@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import Marquee from '../components/Marquee';
 import Proyects from "../components/Proyects"
 import Skills from '../components/Skills';
+import Marquee2 from '../components/Marquee2';
 
 const HomeScreen = () => {
   const tl = useRef(null);
@@ -67,7 +68,11 @@ const HomeScreen = () => {
 
       <section>
         <Proyects />
-      </section>      
+      </section>  
+            
+      <section>
+        <Marquee2 />
+      </section>    
       
       <section>
         <Skills />

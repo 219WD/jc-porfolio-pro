@@ -1,7 +1,10 @@
 /* Projects.css */
 
 .projects-section {
-  padding: 20px;
+  width: 100vw;
+  background-image: url(../assets/bg7.jpg);
+  padding: 2rem 5rem;
+
 }
 
 .title-section {
@@ -76,6 +79,9 @@
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 20px;
+  }
   .title-section {
     flex-direction: column;
     justify-content: center;

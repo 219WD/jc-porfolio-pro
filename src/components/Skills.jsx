@@ -9,7 +9,8 @@ import mongoDb from '../assets/mongodb-icon-1.svg';
 import git from '../assets/git-icon.svg';
 import bootstrap from '../assets/bootstrap-5-1.svg';
 import gsap from '../assets/gsap-greensock.svg';
-import express from '../assets/express-109.svg'
+import express from '../assets/express-js.png';
+import Marquee2 from './Marquee2';
 
 const Skills = () => {
   const skills = [

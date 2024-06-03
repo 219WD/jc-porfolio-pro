@@ -1,8 +1,11 @@
 /* Skills.css */
 
 .skills-section {
-    padding: 20px;
-    width: 90vw;
+    width: 100vw;
+    background-image: url(../assets/bg9.jpg);
+    background-position: center;
+
+    padding: 2rem 5rem;
 }
 
 .title-section {
