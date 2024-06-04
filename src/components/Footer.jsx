@@ -9,11 +9,11 @@ import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <div className="menu-info">
-                <div className="menu-info-col left-col">
+            <div className="footer-info">
+                <div className="footer-info-col left-col">
                     <img src={Logo} alt="Logo" />
                 </div>
-                <div className="menu-info-col">
+                <div className="footer-info-col">
                     <a href="https://www.instagram.com/219labs/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} /> Instagram
                     </a>
@@ -27,11 +27,11 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faFileAlt} /> CV
                     </a>
                 </div>
-                <div className="menu-info-col">
+                <div className="footer-info-col">
                     <p><FontAwesomeIcon icon={faEnvelope} /> jcanepa.web@gmail.com</p>
                     <p><FontAwesomeIcon icon={faWhatsapp} /> +54 381 6 671 884</p>
                 </div>
-                <div className="menu-info-col right-col">
+                <div className="footer-info-col right-col">
                     <img src={Arrow} alt="Arrow" />
                     <p>219LABS</p>
                 </div>
