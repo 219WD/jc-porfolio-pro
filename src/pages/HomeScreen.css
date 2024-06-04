@@ -1,12 +1,12 @@
 .page-content {
   width: 100%;
-  height: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: space-between; /* Asegurar que el contenido empuje el footer */
+  align-items: center;
   overflow: hidden;
+  padding: 5rem 2rem 0 2rem; /* Ajuste del padding */
 }
 
 .hero {
@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .img {

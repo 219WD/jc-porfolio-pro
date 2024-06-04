@@ -6,7 +6,6 @@ import Marquee from '../components/Marquee';
 import Proyects from "../components/Proyects"
 import Skills from '../components/Skills';
 import Marquee2 from '../components/Marquee2';
-import Footer from '../components/Footer';
 
 const HomeScreen = () => {
   const tl = useRef(null);

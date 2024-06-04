@@ -2,10 +2,10 @@
 
 .skills-section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; 
     background-image: url(../assets/bg9.jpg);
     background-position: center;
-    padding: 4rem 5rem;
+    padding: 4rem 5rem 0 5rem; 
 }
 
 .title-section {
@@ -57,7 +57,7 @@ h3 {
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .skills-section {
-        padding: 20px;
+        padding: 40px 20px;
     }
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
