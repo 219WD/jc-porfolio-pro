@@ -1,0 +1,113 @@
+/* AboutMe.css */
+
+.aboutMe-container {
+    width: 100vw;
+    padding: 4rem 5rem;
+    background: #f5f5f5;
+    background-image: url('../assets/bg8.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .aboutMe-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); /* Aumentado a 0.8 para mayor claridad */
+    z-index: 0;
+  }
+  
+  .aboutMe-container h1 {
+    color: #cf5b45;
+    font-size: 50px;
+    z-index: 1;
+  }
+  
+  .aboutMe-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .aboutMe-professional,
+  .aboutMe-personal {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .aboutMe-professional h2,
+  .aboutMe-personal h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #cf5b45;
+  }
+  
+  .aboutMe-text {
+    flex: 1;
+  }
+  
+  .aboutMe-professional p,
+  .aboutMe-personal p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    text-transform: initial;
+  }
+  
+  .aboutMe-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+  }
+  
+  .icon-card svg {
+    margin: 0 1rem;
+    color: #cf5b45;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutMe-container {
+      padding: 2rem;
+    }
+  
+    .aboutMe-content {
+      flex-direction: column;
+    }
+  
+    .aboutMe-professional,
+    .aboutMe-personal {
+      margin: 1rem 0;
+    }
+  
+    .aboutMe-professional p,
+    .aboutMe-personal p {
+      font-size: 1.2rem;
+      color: #fff;
+      text-transform: initial;
+    }
+  }
+  

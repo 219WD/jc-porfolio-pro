@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import "./Marquee.css";
 
-const Marquee = () => {
+const Marquee = ({ text, spans }) => {
   const marqueeRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,12 @@ const Marquee = () => {
     <div className="marquee-container">
       <div className="marquee" ref={marqueeRef}>
         <div className="marquee-content">
-          <span>—</span> ¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina. <span>—</span> ¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina.  <span>—</span> ¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina.  <span>—</span> ¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina. <span>—</span>
+          {spans.map((span, index) => (
+            <React.Fragment key={index}>
+              <span>{span}</span>
+              {index !== spans.length - 1 && <React.Fragment> {text} </React.Fragment>}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>

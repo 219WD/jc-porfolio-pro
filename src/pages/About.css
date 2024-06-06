@@ -1,0 +1,54 @@
+.hero{
+    width: 100vw;
+    margin: 0;
+}
+  
+  .why-web-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: #202020;
+    width: 100vw;
+  }
+  
+  .glass-card {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .5);
+    width: 300px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .glass-card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #cf5b45;
+  }
+  
+  .glass-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: initial;
+  }
+  
+  .glass-card svg {
+    color: #cf5b45;
+  }
+
+  @media (max-width: 768px) {
+    .why-web-section {
+      flex-direction: column;
+    }
+}

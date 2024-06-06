@@ -8,6 +8,8 @@ import Skills from '../components/Skills';
 import Marquee2 from '../components/Marquee2';
 
 const HomeScreen = () => {
+  const spans = ["—", "—", "—", "—"];
+  const text = "¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina.";
   const tl = useRef(null);
 
   useEffect(() => {
@@ -61,10 +63,7 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
-
-      <section>
-        <Marquee />
-      </section>
+      <Marquee text={text} spans={spans} />
 
       <section>
         <Proyects />
