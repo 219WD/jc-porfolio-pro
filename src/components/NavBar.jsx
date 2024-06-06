@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFileAlt, faBars } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../assets/JC-b.png';
 import Arrow from '../assets/arrowW.png';
 
@@ -63,7 +63,7 @@ const NavBar = () => {
           <Link to="/"><img className="Logo" src={Logo} alt="" /></Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
-          <p>Menu</p>
+          <p><FontAwesomeIcon icon={faBars} /></p>
         </div>
       </div>
       <div className="menu-overlay">
@@ -72,7 +72,7 @@ const NavBar = () => {
             <Link to="/"><img className="Logo" src={Logo} alt="" /></Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
-            <p>Close</p>
+          <p>&#x2715;</p>
           </div>
         </div>
         <div className="menu-close-icon" onClick={toggleMenu}>
@@ -95,7 +95,7 @@ const NavBar = () => {
               <a href="https://www.instagram.com/219labs/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /> Instagram</a>
               <a href="https://www.linkedin.com/in/juan-c%C3%A1nepa-970559b9/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /> Linkedin</a>
               <a href="https://github.com/219WD/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a>
-              <a href="https://drive.google.com/file/d/1-wqORNNpFRssxFP94Us0E8mBCC14eoIL/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} /> CV</a>
+              <a href="https://drive.google.com/file/d/1U0oaEJuY4rjUOajNQyXNbPONGyuYrHCJ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} /> CV</a>
             </div>
             <div className="menu-info-col">
               <p><FontAwesomeIcon icon={faEnvelope} /> jcanepa.web@gmail.com</p>

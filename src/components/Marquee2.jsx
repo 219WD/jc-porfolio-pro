@@ -17,12 +17,12 @@ const Marquee2 = ({ text2, spans }) => {
       stagger: 0.1,
       delay: 0.5
     });
-
+  
     // Animación de desplazamiento continuo
     gsap.to(marqueeRef.current, {
       xPercent: -100,
-      repeat: -1,
-      duration: 25,
+      repeat: -1, // Repetir indefinidamente
+      duration: 25, // Ajustar la duración para que sea más rápido
       ease: 'linear',
       delay: 2
     });

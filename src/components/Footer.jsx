@@ -23,7 +23,7 @@ const Footer = () => {
                     <a href="https://github.com/219WD/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} /> Github
                     </a>
-                    <a href="https://drive.google.com/file/d/1-wqORNNpFRssxFP94Us0E8mBCC14eoIL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1U0oaEJuY4rjUOajNQyXNbPONGyuYrHCJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFileAlt} /> CV
                     </a>
                 </div>

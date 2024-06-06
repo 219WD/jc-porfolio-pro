@@ -2,9 +2,11 @@
 
 .projects-section {
   width: 100vw;
+  height: auto;
   background-image: url(../assets/bg7.jpg);
-  padding: 2rem 5rem;
-
+  padding: 2rem 2.5rem 3rem 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .title-section {

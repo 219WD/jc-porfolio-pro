@@ -17,7 +17,7 @@ const Projects = () => {
   useEffect(() => {
     projectsRef.current.forEach((el, index) => {
       gsap.fromTo(el, 
-        { y: 100, opacity: 0.5 }, 
+        { y: 30, opacity: 0.5 }, 
         {
           y: 0,
           opacity: 1,

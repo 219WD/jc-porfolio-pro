@@ -8,7 +8,7 @@ import Skills from '../components/Skills';
 import Marquee2 from '../components/Marquee2';
 
 const HomeScreen = () => {
-  const spans = ["—", "—", "—", "—"];
+  const spans = ["—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—"];
   const text = "¡Bienvenido!";
   const text2 = "¡Fullstack!";
   const tl = useRef(null);
@@ -59,7 +59,7 @@ const HomeScreen = () => {
               </div>
             </a>
             <button>
-              <a className='button-cv' href="https://drive.google.com/file/d/1-wqORNNpFRssxFP94Us0E8mBCC14eoIL/view" target="_blank" rel="noopener noreferrer"><span>DOWNLOAD CV</span></a>
+              <a className='button-cv' href="https://drive.google.com/file/d/1U0oaEJuY4rjUOajNQyXNbPONGyuYrHCJ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>DOWNLOAD CV</span></a>
             </button>
           </div>
         </div>
@@ -69,11 +69,7 @@ const HomeScreen = () => {
       <section>
         <Proyects />
       </section>  
-            
-      <section>
         <Marquee2  text2={text2} spans={spans} />
-      </section>    
-
       <section>
         <Skills />
       </section>
