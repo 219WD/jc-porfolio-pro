@@ -22,7 +22,7 @@ const Skills = () => {
   useEffect(() => {
     skillRefs.current.forEach((el, index) => {
       if (el) {
-        const tl = gsap.timeline({
+        const tl4 = gsap.timeline({
           scrollTrigger: {
             trigger: el,
             start: "top 95%", 
@@ -31,7 +31,7 @@ const Skills = () => {
           }
         });
 
-        tl.fromTo(el, 
+        tl4.fromTo(el, 
           { opacity: 0, y: 50 }, 
           { 
             opacity: 1, 

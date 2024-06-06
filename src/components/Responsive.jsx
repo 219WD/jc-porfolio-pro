@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import img3 from '../assets/img-2-2.png'
 import img4 from '../assets/img-4.png'
 import './Responsive.css'
+import { gsap } from "gsap";
 
 const Responsive = () => {
+    const tl2 = useRef();
+
+    useEffect(() => {
+      gsap.set(".imgs, .txt", { opacity: 0 });
+  
+      tl2.current = gsap.timeline({ paused: true })
+        .to(".imgs, .txt", {
+          opacity: 1,
+          delay: 0.5,
+          duration: 1,
+          stagger: 0.1,
+          ease: "power4.inOut",
+        });
+  
+      tl2.current.play();
+    }, []);
     return (
         <div className="hero-responsive">
             <div className="imgs">

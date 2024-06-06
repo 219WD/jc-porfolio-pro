@@ -9,152 +9,160 @@ import img6 from '../assets/img-6.png'
 import './Slider.css'
 
 const Slider = () => {
-    const itemsRef = useRef([]);
-    const nextBtnRef = useRef(null);
-    const prevBtnRef = useRef(null);
-  
-    useEffect(() => {
-      let current = 0;
-      let directionForward = true;
-      const items = itemsRef.current;
-  
-      const getCard = (item) => {
-        return item.querySelector(".card");
-      };
-  
-      const getTitle = (item) => {
-        return item.querySelector(".title span");
-      };
-  
-      const setItems = () => {
-        items.forEach((item, index) => {
-          getTitle(item).innerHTML = getTitle(item).textContent.replace(
-            /\S/g,
-            "<span class='letter'>$&</span>"
-          );
-  
-          if (index === current) return;
-  
-          anime.set(getCard(item), {
-            translateX: "100vw",
-          });
-  
-          anime.set(getTitle(item).querySelectorAll(".letter"), {
-            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-          });
+  const itemsRef = useRef([]);
+  const nextBtnRef = useRef(null);
+  const prevBtnRef = useRef(null);
+
+  useEffect(() => {
+    // Verificar si los elementos existen antes de intentar acceder a ellos
+    if (!nextBtnRef.current || !prevBtnRef.current) {
+      return;
+    }
+
+    let current = 0;
+    let directionForward = true;
+    const items = itemsRef.current;
+
+    const getCard = (item) => {
+      return item.querySelector(".card");
+    };
+
+    const getTitle = (item) => {
+      return item.querySelector(".title span");
+    };
+
+    const setItems = () => {
+      items.forEach((item, index) => {
+        getTitle(item).innerHTML = getTitle(item).textContent.replace(
+          /\S/g,
+          "<span class='letter'>$&</span>"
+        );
+
+        if (index === current) return;
+
+        anime.set(getCard(item), {
+          translateX: "100vw",
         });
-  
-        anime.set(items[current], {
-          translateX: 0,
-          opacity: 1,
+
+        anime.set(getTitle(item).querySelectorAll(".letter"), {
+          clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
         });
-      };
-  
-      const animate = {
-        in(item) {
-          const card = getCard(item);
-          const title = getTitle(item);
-  
-          const tl = anime.timeline({
-            duration: 1000,
-            easing: "easeOutExpo",
-          });
-  
-          tl.add({
-            targets: card,
-            translateX: directionForward ? ["100vw", 0] : ["-100vw", 0],
-            rotate: [40, 0],
-          }).add(
-            {
-              targets: title.querySelectorAll(".letter"),
-              clipPath: [
-                "polygon(0 0, 100% 0, 100% 0, 0 0)",
-                "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-              ],
-              translateY: directionForward ? ["1em", 0] : ["-1em", 0],
-              delay: anime.stagger(40),
-            },
-            "-=1000"
-          );
-  
-          return tl;
-        },
-  
-        out(item) {
-          const card = getCard(item);
-          const title = getTitle(item);
-  
-          const tl = anime.timeline({
-            duration: 1000,
-            easing: "cubicBezier(0.86,0,0.07,1);",
-          });
-  
-          tl.add({
-            targets: card,
-            translateX: directionForward ? [0, "-150vw"] : [0, "150vw"],
-            rotate: [0, -40],
-          }).add(
-            {
-              targets: title.querySelectorAll(".letter"),
-              clipPath: [
-                "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
-                "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-              ],
-              translateY: directionForward ? [0, "-1em"] : [0, "1em"],
-              delay: anime.stagger(40),
-            },
-            "-=1000"
-          );
-  
-          return tl;
-        },
-      };
-  
-      function updateClasses() {
-        items.forEach((item, index) => {
-          if (index === current) {
-            item.classList.add("is-active");
-          } else {
-            item.classList.remove("is-active");
-          }
+      });
+
+      anime.set(items[current], {
+        translateX: 0,
+        opacity: 1,
+      });
+    };
+
+    const animate = {
+      in(item) {
+        const card = getCard(item);
+        const title = getTitle(item);
+
+        const tl3 = anime.timeline({
+          duration: 1000,
+          easing: "easeOutExpo",
         });
-      }
-  
-      function next() {
-        if (!directionForward) {
-          directionForward = !directionForward;
+
+        tl3.add({
+          targets: card,
+          translateX: directionForward ? ["100vw", 0] : ["-100vw", 0],
+          rotate: [40, 0],
+        }).add(
+          {
+            targets: title.querySelectorAll(".letter"),
+            clipPath: [
+              "polygon(0 0, 100% 0, 100% 0, 0 0)",
+              "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            ],
+            translateY: directionForward ? ["1em", 0] : ["-1em", 0],
+            delay: anime.stagger(40),
+          },
+          "-=1000"
+        );
+
+        return tl3;
+      },
+
+      out(item) {
+        const card = getCard(item);
+        const title = getTitle(item);
+
+        const tl3 = anime.timeline({
+          duration: 1000,
+          easing: "cubicBezier(0.86,0,0.07,1);",
+        });
+
+        tl3.add({
+          targets: card,
+          translateX: directionForward ? [0, "-150vw"] : [0, "150vw"],
+          rotate: [0, -40],
+        }).add(
+          {
+            targets: title.querySelectorAll(".letter"),
+            clipPath: [
+              "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
+              "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
+            ],
+            translateY: directionForward ? [0, "-1em"] : [0, "1em"],
+            delay: anime.stagger(40),
+          },
+          "-=1000"
+        );
+
+        return tl3;
+      },
+    };
+
+    function updateClasses() {
+      items.forEach((item, index) => {
+        if (index === current) {
+          item.classList.add("is-active");
+        } else {
+          item.classList.remove("is-active");
         }
-        animate.out(items[current]);
-        current = (current + 1) % items.length;
-        setTimeout(function () {
-          animate.in(items[current]);
-        }, 500);
-        updateClasses();
+      });
+    }
+
+    function next() {
+      if (!directionForward) {
+        directionForward = !directionForward;
       }
-  
-      function prev() {
-        if (directionForward) {
-          directionForward = !directionForward;
-        }
-        animate.out(items[current]);
-        current = (current - 1 + items.length) % items.length;
-        setTimeout(function () {
-          animate.in(items[current]);
-        }, 500);
-        updateClasses();
+      animate.out(items[current]);
+      current = (current + 1) % items.length;
+      setTimeout(function () {
+        animate.in(items[current]);
+      }, 500);
+      updateClasses();
+    }
+
+    function prev() {
+      if (directionForward) {
+        directionForward = !directionForward;
       }
-  
-      nextBtnRef.current.addEventListener("click", next);
-      prevBtnRef.current.addEventListener("click", prev);
-  
-      setItems();
-  
-      // Clean up event listeners on unmount
-      return () => {
+      animate.out(items[current]);
+      current = (current - 1 + items.length) % items.length;
+      setTimeout(function () {
+        animate.in(items[current]);
+      }, 500);
+      updateClasses();
+    }
+
+    // Añadir event listeners solo si los elementos existen
+    nextBtnRef.current.addEventListener("click", next);
+    prevBtnRef.current.addEventListener("click", prev);
+
+    setItems();
+
+    // Limpiar event listeners en el desmontaje del componente
+    return () => {
+      if (nextBtnRef.current && prevBtnRef.current) {
         nextBtnRef.current.removeEventListener("click", next);
         prevBtnRef.current.removeEventListener("click", prev);
-      };
-    }, []);
+      }
+    };
+  }, []);
     return (
         <div className='page-slider'>
             <div className="hero-proyects">
