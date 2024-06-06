@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faDatabase, faLightbulb } from '@fortawesome/free-solid-svg-icons';
-import imgMERN from '../assets/yo.jpg'; // Asegúrate de tener una imagen adecuada en tu carpeta de assets
+import imgMERN from '../assets/yo-codeando.png'; 
 import './WhyHire.css';
 
 const WhyHire = () => {

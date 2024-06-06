@@ -9,7 +9,7 @@ import Marquee2 from '../components/Marquee2';
 
 const HomeScreen = () => {
   const spans = ["—", "—", "—", "—"];
-  const text = "¡Bienvenido a mi portafolio! Soy un desarrollador de Tucumán, Argentina.";
+  const text = "¡Bienvenido!";
   const tl = useRef(null);
 
   useEffect(() => {

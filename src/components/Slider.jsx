@@ -91,7 +91,7 @@ const Slider = () => {
   
           tl.add({
             targets: card,
-            translateX: directionForward ? [0, "-100vw"] : [0, "100vw"],
+            translateX: directionForward ? [0, "-150vw"] : [0, "150vw"],
             rotate: [0, -40],
           }).add(
             {

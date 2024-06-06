@@ -9,6 +9,7 @@ const Marquee = ({ text, spans }) => {
     // Animación de entrada desde abajo con máscara
     gsap.set(".marquee-content, .marquee-container", { y: 75, opacity: 0 });
     gsap.to(".marquee-content, .marquee-container", {
+      x: 150,
       y: 0,
       opacity: 1,
       duration: 1,
@@ -19,7 +20,7 @@ const Marquee = ({ text, spans }) => {
 
     // Animación de desplazamiento continuo
     gsap.to(marqueeRef.current, {
-      xPercent: -50,
+      xPercent: -100,
       repeat: -1,
       duration: 25,
       ease: 'linear',
