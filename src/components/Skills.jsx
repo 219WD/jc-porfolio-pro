@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Skills.css';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import htmlIcon from '../assets/html-1.svg';
 import cssIcon from '../assets/css-3.svg';
 import jsIcon from '../assets/javascript-1.svg';
@@ -12,7 +13,46 @@ import bootstrap from '../assets/bootstrap-5-1.svg';
 import gsapIcon from '../assets/gsap-greensock.svg';
 import express from '../assets/express-js.png';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Skills = () => {
+  const skillRefs = useRef([]);
+  const iconRefs = useRef([]);
+
+  useEffect(() => {
+    skillRefs.current.forEach((el, index) => {
+      if (el) {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%", 
+            end: "bottom 5%", 
+            toggleActions: "play none none reverse",
+          }
+        });
+
+        tl.fromTo(el, 
+          { opacity: 0, y: 50 }, 
+          { 
+            opacity: 1, 
+            y: 0, 
+            duration: 0.8, 
+            ease: 'power2.out',
+          }
+        ).fromTo(iconRefs.current[index], 
+          { opacity: 0, scale: 0.5 }, 
+          { 
+            opacity: 1, 
+            scale: 1, 
+            duration: 0.5, 
+            ease: 'power2.out',
+          }, 
+          "-=0.5"
+        );
+      }
+    });
+  }, []);
+
   const skills = [
     { name: 'HTML', image: htmlIcon },
     { name: 'CSS', image: cssIcon },
@@ -26,17 +66,6 @@ const Skills = () => {
     { name: 'Express', image: express },
   ];
 
-  const tl = useRef([]);
-
-  useEffect(() => {
-    tl.current.forEach((el, index) => {
-      gsap.fromTo(el, 
-        { strokeDashoffset: 1000 }, 
-        { strokeDashoffset: 0, duration: 2, delay: index * 0.3, ease: 'power2.out' }
-      );
-    });
-  }, []);
-
   return (
     <section className="skills-section">
       <div className="title-section">
@@ -45,15 +74,16 @@ const Skills = () => {
       </div>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="skill-card"
+          <div 
+            key={index} 
+            className="skill-card" 
+            ref={el => (skillRefs.current[index] = el)}
           >
             <img 
               src={skill.image} 
               alt={skill.name} 
               className="skill-icon" 
-              ref={el => (tl.current[index] = el)} 
+              ref={el => (iconRefs.current[index] = el)}
             />
           </div>
         ))}

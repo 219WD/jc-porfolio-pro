@@ -10,6 +10,7 @@ import Marquee2 from '../components/Marquee2';
 const HomeScreen = () => {
   const spans = ["—", "—", "—", "—"];
   const text = "¡Bienvenido!";
+  const text2 = "¡Fullstack!";
   const tl = useRef(null);
 
   useEffect(() => {
@@ -70,7 +71,7 @@ const HomeScreen = () => {
       </section>  
             
       <section>
-        <Marquee2 />
+        <Marquee2  text2={text2} spans={spans} />
       </section>    
 
       <section>

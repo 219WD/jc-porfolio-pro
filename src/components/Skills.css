@@ -30,6 +30,7 @@
 }
 
 .skill-card {
+    position: relative;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
@@ -40,10 +41,28 @@
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Ensures the shine effect is contained within the card */
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.6; /* Adjust the opacity for subtle effect */
+    pointer-events: none;
+}
+
+.skill-card:hover::before {
+    transform: translateX(200%);
 }
 
 .skill-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -51,8 +70,6 @@
     width: 100px;
     height: auto;
     margin: auto;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
 }
 
 h3 {

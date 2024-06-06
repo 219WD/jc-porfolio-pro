@@ -1,14 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import "./Marquee2.css";
+import "./Marquee.css";
 
-const Marquee2 = () => {
+const Marquee2 = ({ text2, spans }) => {
   const marqueeRef = useRef(null);
 
   useEffect(() => {
     // Animación de entrada desde abajo con máscara
-    gsap.set(".marquee-content, .marquee-container2", { y: 75, opacity: 0 });
-    gsap.to(".marquee-content, .marquee-container2", {
+    gsap.set(".marquee-content, .marquee-container", { y: 75, opacity: 0 });
+    gsap.to(".marquee-content, .marquee-container", {
+      x: 150,
       y: 0,
       opacity: 1,
       duration: 1,
@@ -19,7 +20,7 @@ const Marquee2 = () => {
 
     // Animación de desplazamiento continuo
     gsap.to(marqueeRef.current, {
-      xPercent: -50,
+      xPercent: -100,
       repeat: -1,
       duration: 25,
       ease: 'linear',
@@ -28,10 +29,15 @@ const Marquee2 = () => {
   }, []);
 
   return (
-    <div className="marquee-container2">
+    <div className="marquee-container">
       <div className="marquee" ref={marqueeRef}>
         <div className="marquee-content">
-          <span>—</span> ¡Soy un desarrollador FullStack! Estas son mis habilidades principales. <span>—</span> ¡Soy un desarrollador FullStack! Estas son mis habilidades principales.  <span>—</span> ¡Soy un desarrollador FullStack! Estas son mis habilidades principales.  <span>—</span> ¡Soy un desarrollador FullStack! Estas son mis habilidades principales. <span>—</span>
+          {spans.map((span, index) => (
+            <React.Fragment key={index}>
+              <span>{span}</span>
+              {index !== spans.length - 1 && <React.Fragment> {text2} </React.Fragment>}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>
