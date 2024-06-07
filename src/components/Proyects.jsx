@@ -25,8 +25,8 @@ const Projects = () => {
           ease: "power4.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 95%", // When the top of the element hits 80% of the viewport height
-            end: "bottom 5%", // When the bottom of the element hits 20% of the viewport height
+            start: "top 95%", 
+            end: "bottom 5%", 
             scrub: 1,
           },
         }

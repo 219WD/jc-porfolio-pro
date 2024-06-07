@@ -46,7 +46,7 @@
   }
 }
 
-.skills-icons {
+.skills-icons2 {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -54,7 +54,7 @@
   flex-wrap: wrap;
 }
 
-.skill-icon {
+.skill-icon2 {
   width: 100px;
   height: 100px;
   opacity: 0;
@@ -88,11 +88,11 @@
     margin-top: 20px;
   }
 
-  .skills-icons {
+  .skills-icons2 {
     gap: 10px;
   }
 
-  .skill-icon {
+  .skill-icon2 {
     width: 60px;
     height: 60px;
   }

@@ -40,13 +40,13 @@ const Work = () => {
             <span key={index}>{letter}</span>
           ))}
         </h1>
-        <div className="skills-icons">
+        <div className="skills-icons2">
           {skills.map((skill, index) => (
             <img 
               key={index} 
               src={skill.image} 
               alt={skill.name} 
-              className="skill-icon bounce"
+              className="skill-icon2 bounce"
             />
           ))}
         </div>
