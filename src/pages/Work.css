@@ -77,13 +77,13 @@
 
 /* Media queries for mobile responsiveness */
 @media (max-width: 600px) {
-  .hero-title {
+  .hero-title2 {
     padding-top: 5rem;
     font-size: 2.2em;
     padding-bottom: 2rem;
   }
 
-  .hero-proyects h2 {
+  .hero-proyects2 h2 {
     font-size: 1.5em;
     margin-top: 20px;
   }
