@@ -1,12 +1,9 @@
-/* Projects.css */
-
 .projects-section {
   width: 100vw;
   height: auto;
   background-image: url(../assets/bg7.jpg);
   padding: 2rem 2.5rem 3rem 2.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0; /* Asegurarse de que no haya margen adicional */
 }
 
 .title-section {
@@ -64,41 +61,18 @@
 }
 
 .project-card:hover .project-image {
-  transform: translateY(-50%);
+  transform: translateY(-100px);
 }
 
-/* Ocultar las barras de desplazamiento */
-.project-image-container::-webkit-scrollbar {
-  display: none;
+.project-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
-.project-image-container {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .projects-section {
-    padding: 20px;
-  }
-  .title-section {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .title-section .parrafo {
-    font-size: 1.2rem;
-  }
-
-  .title-section h2 {
-    white-space: nowrap;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+.project-description {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
 }

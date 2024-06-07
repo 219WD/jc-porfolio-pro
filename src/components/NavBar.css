@@ -16,13 +16,13 @@
     cursor: pointer;
 }
 .menu-open p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .menu-close p{
     color: #000;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 

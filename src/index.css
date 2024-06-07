@@ -30,10 +30,10 @@ a, p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: 5rem 2rem 0 2rem; 
+  padding: 5rem 2rem 0 2rem;
 }
 
 h3 {

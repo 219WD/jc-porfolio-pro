@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Asegurar que el contenido empuje el footer */
+  justify-content: space-between; 
   align-items: center;
   overflow: hidden;
   padding: 5rem 2rem 0 2rem; /* Ajuste del padding */
