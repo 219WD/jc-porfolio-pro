@@ -34,8 +34,8 @@ const Work = () => {
 
   return (
     <div className='page-content'>
-      <div className="hero-proyects">
-        <h1 className="hero-title">
+      <div className="hero-proyects2">
+        <h1 className="hero-title2">
           {Array.from("Soy un programador Fullstack MERN").map((letter, index) => (
             <span key={index}>{letter}</span>
           ))}
