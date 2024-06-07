@@ -85,7 +85,9 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 1rem;
     }
-
+    .title-section{
+        flex-direction: column;
+    }
     .title-section p {
         font-size: 1.2rem;
     }
