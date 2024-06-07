@@ -70,7 +70,7 @@ const Skills = () => {
     <section className="skills-section">
       <div className="title-section">
         <h2>Habilidades</h2>
-        <p>Estas son mis habilidades que aprendí a lo largo de todo mi proceso de aprendizaje.</p>
+        <p>Estas son mis habilidades, que adquiri a lo largo de todo mi proceso de aprendizaje.</p>
       </div>
       <div className="skills-grid">
         {skills.map((skill, index) => (
