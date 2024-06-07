@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import Marquee from "../components/Marquee";
-import Proyects from "../components/Proyects"
 import './Work.css'
 import jsIcon from '../assets/javascript-1.svg';
 import nodeJs from '../assets/nodejs-icon.svg';
 import react from '../assets/react-2.svg';
 import mongoDb from '../assets/mongodb-icon-1.svg';
 import express from '../assets/express-js.png';
+import ProjectCard from '../components/ProjectCard';
+import ProjectsGrid from '../components/ProjectCard';
 
 const Work = () => {
   const spans = ["—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—"];
@@ -24,7 +25,7 @@ const Work = () => {
     let delay = 0;
     letters.forEach((letter) => {
       if (letter.textContent === ' ') {
-        letter.style.width = '0.5rem'; 
+        letter.style.width = '0.5rem';
         return;
       }
       letter.style.animationDelay = `${delay}s`;
@@ -42,10 +43,10 @@ const Work = () => {
         </h1>
         <div className="skills-icons2">
           {skills.map((skill, index) => (
-            <img 
-              key={index} 
-              src={skill.image} 
-              alt={skill.name} 
+            <img
+              key={index}
+              src={skill.image}
+              alt={skill.name}
               className="skill-icon2 bounce"
             />
           ))}
@@ -53,7 +54,9 @@ const Work = () => {
         <h2 className="fade-in">Conoce un poco más de mi trabajo</h2>
       </div>
       <Marquee text={text} spans={spans} />
-      <Proyects />
+      <div className="work-section">
+        <ProjectsGrid />
+      </div>
     </div>
   );
 };
