@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import SinFondo from "../assets/yo-sin-fondo.png";
+import SinFondo from "../assets/yo-bg-fondo-naranj.png";
+import Design from '../assets/Sin título-1.png'
 import "../pages/HomeScreen.css";
 import { gsap } from "gsap";
 import Marquee from '../components/Marquee';
@@ -14,7 +15,7 @@ const HomeScreen = () => {
   const tl = useRef(null);
 
   useEffect(() => {
-    gsap.set(".img, .text", { y: 75, opacity: 0 });
+    gsap.set(".img, .text", { y: -75, opacity: 0 });
 
     tl.current = gsap.timeline({ paused: true })
       .to(".img, .text", {
@@ -34,13 +35,13 @@ const HomeScreen = () => {
       <div className='hero'>
         <div className="img">
           <img className='foto' src={SinFondo} alt="Juan Cánepa" />
-          <div className="color"></div>
-          <div className="color2"></div>
-          <div className="color3"></div>
+          <img src={Design} alt="" className='design' />
         </div>
         <div className="text">
           <h1 className='title'>Juan Cánepa</h1>
           <h2>Fullstack Developer</h2>
+          <p>Soy un experto en crear diseños completamente responsivos, asegurando que el contenido se adapte perfectamente a todo tipo de pantallas, desde móviles hasta monitores de escritorio.
+            <br /><br />Utilizo técnicas avanzadas de CSS y frameworks modernos para garantizar una experiencia de usuario óptima en cualquier dispositivo.</p>
           <div className="buttons">
             <a className='button-github' href="https://github.com/219WD/" target="_blank" rel="noopener noreferrer">
               <div className="button-icon">
@@ -68,8 +69,8 @@ const HomeScreen = () => {
 
       <section>
         <Proyects />
-      </section>  
-        <Marquee2  text2={text2} spans={spans} />
+      </section>
+      <Marquee2 text2={text2} spans={spans} />
       <section>
         <Skills />
       </section>

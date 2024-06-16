@@ -15,7 +15,7 @@ const Marquee = ({ text, spans }) => {
       duration: 1,
       ease: "power4.inOut",
       stagger: 0.1,
-      delay: 0.5
+      delay: 2
     });
   
     // Animación de desplazamiento continuo

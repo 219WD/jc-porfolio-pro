@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import "./Marquee.css";
+import "./Marquee2.css";
 
 const Marquee2 = ({ text2, spans }) => {
   const marqueeRef = useRef(null);
 
   useEffect(() => {
     // Animación de entrada desde abajo con máscara
-    gsap.set(".marquee-content, .marquee-container", { y: 75, opacity: 0 });
-    gsap.to(".marquee-content, .marquee-container", {
+    gsap.set(".marquee-content, .marquee-container2", { y: 75, opacity: 0 });
+    gsap.to(".marquee-content, .marquee-container2", {
       x: 150,
       y: 0,
       opacity: 1,
@@ -29,7 +29,7 @@ const Marquee2 = ({ text2, spans }) => {
   }, []);
 
   return (
-    <div className="marquee-container">
+    <div className="marquee-container2">
       <div className="marquee" ref={marqueeRef}>
         <div className="marquee-content">
           {spans.map((span, index) => (
