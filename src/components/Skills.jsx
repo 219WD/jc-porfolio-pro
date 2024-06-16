@@ -12,6 +12,16 @@ import git from '../assets/git-icon.svg';
 import bootstrap from '../assets/bootstrap-5-1.svg';
 import gsapIcon from '../assets/gsap-greensock.svg';
 import express from '../assets/express-js.png';
+import sql from '../assets/database-sql-svgrepo-com.png';
+import aws from '../assets/aws-2.svg';
+import wordpress from '../assets/wordpress-icon-1.svg';
+import npm from '../assets/npm.svg';
+import postman from '../assets/postman.svg';
+import trello from '../assets/trello.svg';
+import slack from '../assets/slack-new-logo.svg';
+import ps from '../assets/photoshop-cc-4.svg';
+import ai from '../assets/adobe-illustrator-cs6.svg';
+import VSC from '../assets/visual-studio-code-1.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,10 +70,20 @@ const Skills = () => {
     { name: 'Node.js', image: nodeJs },
     { name: 'React', image: react },
     { name: 'MongoDb', image: mongoDb },
-    { name: 'Git', image: git },
-    { name: 'Bootstrap', image: bootstrap },
-    { name: 'Gsap', image: gsapIcon },
     { name: 'Express', image: express },
+    { name: 'SQL', image: sql },
+    { name: 'AWS', image: aws },
+    { name: 'Postman', image: postman },
+    { name: 'Gsap', image: gsapIcon },
+    { name: 'Bootstrap', image: bootstrap },
+    { name: 'Wordpress', image: wordpress },
+    { name: 'npm', image: npm },
+    { name: 'Git', image: git },
+    { name: 'Trello', image: trello },
+    { name: 'Slack', image: slack },
+    { name: 'PS', image: ps },
+    { name: 'AI', image: ai },
+    { name: 'VSC', image: VSC },
   ];
 
   return (
