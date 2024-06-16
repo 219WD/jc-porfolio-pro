@@ -13,11 +13,11 @@ const Work = () => {
   const spans = ["—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—", "—"];
   const text = "¡Proyectos!";
   const skills = [
-    { name: 'JS', image: jsIcon },
-    { name: 'Node.js', image: nodeJs },
-    { name: 'React', image: react },
     { name: 'MongoDb', image: mongoDb },
     { name: 'Express', image: express },
+    { name: 'React', image: react },
+    { name: 'Node.js', image: nodeJs },
+    { name: 'JS', image: jsIcon },
   ];
 
   useEffect(() => {

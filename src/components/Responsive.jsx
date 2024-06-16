@@ -13,7 +13,7 @@ const Responsive = () => {
       tl2.current = gsap.timeline({ paused: true })
         .to(".imgs, .txt", {
           opacity: 1,
-          delay: 0.5,
+          delay: 1.5,
           duration: 1,
           stagger: 0.1,
           ease: "power4.inOut",
