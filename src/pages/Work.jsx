@@ -6,7 +6,6 @@ import nodeJs from '../assets/nodejs-icon.svg';
 import react from '../assets/react-2.svg';
 import mongoDb from '../assets/mongodb-icon-1.svg';
 import express from '../assets/express-js.png';
-import ProjectCard from '../components/ProjectCard';
 import ProjectsGrid from '../components/ProjectCard';
 
 const Work = () => {
@@ -21,8 +20,8 @@ const Work = () => {
   ];
 
   useEffect(() => {
-    const letters = document.querySelectorAll('.hero-title span');
-    let delay = 0;
+    const letters = document.querySelectorAll('.hero-title2 span');
+    let delay = 1;
     letters.forEach((letter) => {
       if (letter.textContent === ' ') {
         letter.style.width = '0.5rem';

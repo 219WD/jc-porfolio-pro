@@ -15,11 +15,7 @@
   padding-bottom: 2rem;
 }
 
-.fade-in {
-  color: #fff;
-}
-
-.hero-title span {
+.hero-title2 span {
   display: inline-block;
   transform: translateY(-100%);
   opacity: 0;
@@ -33,11 +29,10 @@
   }
 }
 
-.hero-proyects h2 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+.fade-in {
+  color: #fff;
   opacity: 0;
-  animation: fadeIn 1s forwards 1s;
+  animation: fadeIn 1s forwards 1.5s;
 }
 
 @keyframes fadeIn {
@@ -59,6 +54,7 @@
   height: 100px;
   opacity: 0;
   animation: fadeBounce 1.5s infinite alternate;
+  animation-delay: 1.5s;
 }
 
 @keyframes fadeBounce {

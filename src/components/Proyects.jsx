@@ -68,7 +68,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="bottom">
-        <a href="#" className='button-proyects'>Projects</a>
+        <a href="/work" className='button-proyects'>Projects</a>
         <div className="icons">
           <img src={icon2} alt="" className='icon-brutalism' />
           <img src={icon1} alt="" className='icon-brutalism' />
