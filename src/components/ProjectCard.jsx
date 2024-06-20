@@ -15,7 +15,7 @@ import proyecto2 from '../assets/Captura de pantalla_2-6-2024_185319_mr-contable
 import proyecto3 from '../assets/Captura de pantalla_2-6-2024_185527_ntesteticaysalud.vercel.app.jpeg';
 import proyecto4 from '../assets/Captura de pantalla_2-6-2024_19043_jlslmovies.netlify.app.jpeg';
 import proyecto5 from '../assets/Captura de pantalla_2-6-2024_1927_localdecomida.netlify.app.jpeg';
-import proyecto6 from '../assets/Captura de pantalla_2-6-2024_19519_doncanepabarbershop.netlify.app.jpeg';
+import proyecto6 from '../assets/Captura de pantalla_20-6-2024_183145_mentalpeace-mkt.vercel.app.jpeg';
 
 
 
@@ -34,6 +34,18 @@ const projects = [
             { name: 'GitHub', icon: git },
         ],
         link: 'https://stockmanager-oficial.vercel.app/'
+    },
+    {
+        image: proyecto6,
+        title: 'Mental Peace',
+        description: 'Landing page con boton a whatsapp, redes de contacto, videos y testimonios reales. Animaciones con GSAP para mejorar la experiencia del usuario.',
+        technologies: [
+            { name: 'React', icon: reactIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon },
+        ],
+        link: 'https://mentalpeace-mkt.vercel.app/'
     },
     {
         image: proyecto2,
@@ -79,16 +91,6 @@ const projects = [
             { name: 'Javascript', icon: jsIcon },
         ],
         link: 'https://localdecomida.netlify.app/'
-    },
-    {
-        image: proyecto6,
-        title: 'Don Canepa Barbershop',
-        description: 'Proyecto personal para practicar las animaciones, css, y deploy con netlify.',
-        technologies: [
-            { name: 'HTML', icon: htmlIcon },
-            { name: 'CSS', icon: cssIcon },
-        ],
-        link: 'https://doncanepabarbershop.netlify.app/'
     }
 ];
 
