@@ -14,7 +14,7 @@ const Footer = () => {
                     <img src={Logo} alt="Logo" />
                 </div>
                 <div className="footer-info-col">
-                    <a href="https://www.instagram.com/219labs/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/canepadev/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} /> Instagram
                     </a>
                     <a href="https://www.linkedin.com/in/juan-c%C3%A1nepa-970559b9/" target="_blank" rel="noopener noreferrer">
