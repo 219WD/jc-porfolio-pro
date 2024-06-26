@@ -14,7 +14,7 @@ import proyecto1 from '../assets/Captura de pantalla_2-6-2024_185612_stockmanage
 import proyecto2 from '../assets/Captura de pantalla_2-6-2024_185319_mr-contables.vercel.app.jpeg';
 import proyecto3 from '../assets/Captura de pantalla_2-6-2024_185527_ntesteticaysalud.vercel.app.jpeg';
 import proyecto4 from '../assets/Captura de pantalla_2-6-2024_19043_jlslmovies.netlify.app.jpeg';
-import proyecto5 from '../assets/Captura de pantalla_2-6-2024_1927_localdecomida.netlify.app.jpeg';
+import proyecto5 from '../assets/landing-muebles.png';
 import proyecto6 from '../assets/Captura de pantalla_20-6-2024_183145_mentalpeace-mkt.vercel.app.jpeg';
 
 
@@ -46,6 +46,18 @@ const projects = [
             { name: 'GSAP', icon: gsapIcon },
         ],
         link: 'https://mentalpeace-mkt.vercel.app/'
+    },
+    {
+        image: proyecto5,
+        title: 'Diseñador de Muebles',
+        description: 'Landing page moderna con animaciones de Scrolltrigger para diseñador de muebles, con breve historia, descripcion de productos, portafolio de trabajos y redes sociales.',
+        technologies: [
+            { name: 'React', icon: reactIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon},
+        ],
+        link: 'https://landingpage-muebles.vercel.app/'
     },
     {
         image: proyecto2,
@@ -80,17 +92,6 @@ const projects = [
             { name: 'GSAP', icon: gsapIcon },
         ],
         link: 'https://jlslmovies.netlify.app/'
-    },
-    {
-        image: proyecto5,
-        title: 'Local de Comida',
-        description: 'Pagina para un Delivery de comida, en esta pagina aprendi a crear un observador con Javascript para hacer las animaciones. Tambien diseñe desde cero el Slider y el toggle del Navbar.',
-        technologies: [
-            { name: 'HTML', icon: htmlIcon },
-            { name: 'CSS', icon: cssIcon },
-            { name: 'Javascript', icon: jsIcon },
-        ],
-        link: 'https://localdecomida.netlify.app/'
     }
 ];
 

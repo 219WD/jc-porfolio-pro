@@ -6,7 +6,7 @@ import proyecto1 from '../assets/Captura de pantalla_2-6-2024_185612_stockmanage
 import proyecto2 from '../assets/Captura de pantalla_2-6-2024_185319_mr-contables.vercel.app.jpeg';
 import proyecto3 from '../assets/Captura de pantalla_2-6-2024_185527_ntesteticaysalud.vercel.app.jpeg';
 import proyecto4 from '../assets/Captura de pantalla_2-6-2024_19043_jlslmovies.netlify.app.jpeg';
-import proyecto5 from '../assets/Captura de pantalla_2-6-2024_1927_localdecomida.netlify.app.jpeg';
+import proyecto5 from '../assets/landing-muebles.png';
 import proyecto6 from '../assets/Captura de pantalla_20-6-2024_183145_mentalpeace-mkt.vercel.app.jpeg'
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
@@ -40,10 +40,10 @@ const Projects = () => {
   const projects = [
     { title: 'Proyecto 1', image: proyecto1, link: 'https://stockmanager-oficial.vercel.app/' },
     { title: 'Proyecto 2', image: proyecto6, link: 'https://mentalpeace-mkt.vercel.app/' },
-    { title: 'Proyecto 3', image: proyecto2, link: 'https://mr-contables.vercel.app/' },
-    { title: 'Proyecto 4', image: proyecto3, link: 'https://ntesteticaysalud.vercel.app/' },
-    { title: 'Proyecto 5', image: proyecto4, link: 'https://jlslmovies.netlify.app/' },
-    { title: 'Proyecto 6', image: proyecto5, link: 'https://localdecomida.netlify.app/' },
+    { title: 'Proyecto 3', image: proyecto5, link: 'https://landingpage-muebles.vercel.app/' },
+    { title: 'Proyecto 4', image: proyecto2, link: 'https://mr-contables.vercel.app/' },
+    { title: 'Proyecto 5', image: proyecto3, link: 'https://ntesteticaysalud.vercel.app/' },
+    { title: 'Proyecto 6', image: proyecto4, link: 'https://jlslmovies.netlify.app/' },
   ];
 
   return (
