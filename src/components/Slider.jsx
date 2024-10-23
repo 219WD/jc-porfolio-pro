@@ -183,37 +183,37 @@ const Slider = () => {
                         <div className="item is-active" ref={(el) => (itemsRef.current[0] = el)}>
                             <p className="title"><span>diseño</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img1} alt="stockmanager mobile" />
+                                <img className="card-bg" src={img1} alt="stockmanager mobile" loading="lazy" />
                             </div>
                         </div>
                         <div className="item" ref={(el) => (itemsRef.current[1] = el)}>
                             <p className="title"><span>responsivo</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img2} alt="stockmanager desktop" />
+                                <img className="card-bg" src={img2} alt="stockmanager desktop" loading="lazy" />
                             </div>
                         </div>
                         <div className="item" ref={(el) => (itemsRef.current[2] = el)}>
                             <p className="title"><span>adaptable</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img3} alt="nt mobile" />
+                                <img className="card-bg" src={img3} alt="nt mobile" loading="lazy" />
                             </div>
                         </div>
                         <div className="item" ref={(el) => (itemsRef.current[3] = el)}>
                             <p className="title"><span>para</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img4} alt="nt desktop" />
+                                <img className="card-bg" src={img4} alt="nt desktop" loading="lazy" />
                             </div>
                         </div>
                         <div className="item" ref={(el) => (itemsRef.current[4] = el)}>
                             <p className="title"><span>celulares</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img5} alt="mr mobile" />
+                                <img className="card-bg" src={img5} alt="mr mobile" loading="lazy" />
                             </div>
                         </div>
                         <div className="item" ref={(el) => (itemsRef.current[5] = el)}>
                             <p className="title"><span>computadoras</span></p>
                             <div className="card">
-                                <img className="card-bg" src={img6} alt="mr desktop" />
+                                <img className="card-bg" src={img6} alt="mr desktop" loading="lazy" />
                             </div>
                         </div>
                     </div>

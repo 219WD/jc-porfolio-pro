@@ -69,7 +69,7 @@ const Projects = () => {
           >
             <div className="project-image-container">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img src={project.image} alt={project.title} className="project-image" loading="lazy"  />
               </a>
             </div>
           </div>
@@ -78,9 +78,9 @@ const Projects = () => {
       <div className="bottom">
         <a href="/work" className='button-proyects'>Projects</a>
         <div className="icons">
-          <img src={icon2} alt="" className='icon-brutalism' />
-          <img src={icon1} alt="" className='icon-brutalism' />
-          <img src={icon3} alt="" className='icon-brutalism' />
+          <img src={icon2} alt="" className='icon-brutalism' loading="lazy" />
+          <img src={icon1} alt="" className='icon-brutalism' loading="lazy" />
+          <img src={icon3} alt="" className='icon-brutalism' loading="lazy" />
         </div>
       </div>
     </section>

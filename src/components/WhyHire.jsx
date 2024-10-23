@@ -23,7 +23,7 @@ const WhyHire = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src={imgMERN} alt="MERN Stack" />
+            <img src={imgMERN} alt="MERN Stack" loading="lazy" />
           </div>
         </div>
       );      

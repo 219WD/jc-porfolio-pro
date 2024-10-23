@@ -151,14 +151,14 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="project-card-container-2">
             <div className="image-card-2">
-                <img src={project.image} alt={project.title} className="scrollable-image-2" />
+                <img src={project.image} alt={project.title} className="scrollable-image-2" loading="lazy" />
             </div>
             <div className="project-details-2">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="technologies-2">
                     {project.technologies.map((tech, index) => (
-                        <img key={index} src={tech.icon} alt={tech.name} title={tech.name} className="technology-icon-2" />
+                        <img key={index} src={tech.icon} alt={tech.name} title={tech.name} className="technology-icon-2" loading="lazy" />
                     ))}
                 </div>
                 <a href={project.link} className="project-link-2" target="_blank" rel="noopener noreferrer">Abrir Proyecto</a>

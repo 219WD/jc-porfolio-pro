@@ -34,8 +34,8 @@ const HomeScreen = () => {
     <div className='page-content'>
       <div className='hero'>
         <div className="img">
-          <img className='foto' src={SinFondo} alt="Juan Cánepa" />
-          <img src={Design} alt="" className='design' />
+          <img className='foto' src={SinFondo} alt="Juan Cánepa" loading="lazy" />
+          <img src={Design} alt="" className='design' loading="lazy" />
         </div>
         <div className="text">
           <h1 className='title'>Juan Cánepa</h1>

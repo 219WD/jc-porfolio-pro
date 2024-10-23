@@ -47,6 +47,7 @@ const Work = () => {
               src={skill.image}
               alt={skill.name}
               className="skill-icon2 bounce"
+              loading="lazy"
             />
           ))}
         </div>

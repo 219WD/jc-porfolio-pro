@@ -104,6 +104,7 @@ const Skills = () => {
               alt={skill.name} 
               className="skill-icon" 
               ref={el => (iconRefs.current[index] = el)}
+              loading='lazy'
             />
           </div>
         ))}

@@ -24,8 +24,8 @@ const Responsive = () => {
     return (
         <div className="hero-responsive">
             <div className="imgs">
-                <img className="img-hero-desktop" src={img4} alt="nt desktop" />
-                <img className="img-hero-mobile" src={img3} alt="nt mobile" />
+                <img className="img-hero-desktop" src={img4} alt="nt desktop" loading="lazy" />
+                <img className="img-hero-mobile" src={img3} alt="nt mobile" loading="lazy" />
             </div>
             <div className="txt">
                 <h2>Diseños Responsivos</h2>
