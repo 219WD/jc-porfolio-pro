@@ -16,6 +16,10 @@ import proyecto3 from '../assets/Captura de pantalla_2-6-2024_185527_ntesteticay
 import proyecto4 from '../assets/Captura de pantalla_2-6-2024_19043_jlslmovies.netlify.app.jpeg';
 import proyecto5 from '../assets/landing-muebles.png';
 import proyecto6 from '../assets/Captura de pantalla_20-6-2024_183145_mentalpeace-mkt.vercel.app.jpeg';
+import proyecto7 from '../assets/Captura de pantalla_17-10-2024_18181_127.0.0.1.png'
+import proyecto8 from '../assets/Captura de pantalla_23-10-2024_162855_219labs.vercel.app.jpeg'
+import proyecto9 from '../assets/Captura de pantalla_17-10-2024_181626_ktfcrew.vercel.app.jpeg'
+import proyecto10 from '../assets/Captura de pantalla_17-10-2024_181252_magnoly.vercel.app.png'
 
 
 
@@ -92,6 +96,54 @@ const projects = [
             { name: 'GSAP', icon: gsapIcon },
         ],
         link: 'https://jlslmovies.netlify.app/'
+    },
+    {
+        image: proyecto7,
+        title: 'Hurricane',
+        description: 'Proyecto landingpage responsive full animada con GSAP, Scrolltrigger, Lenis, Timeline, creacion y animacion de SVG para el logo.',
+        technologies: [
+            { name: 'HTML', icon: htmlIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon },
+        ],
+        link: 'https://hurricane-one.vercel.app/'
+    },
+    {
+        image: proyecto8,
+        title: '219LABS',
+        description: 'Proyecto landingpage para mi agencia de desarrollo y marketing, responsive full animada con GSAP, Scrolltrigger, Lenis.',
+        technologies: [
+            { name: 'HTML', icon: htmlIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon },
+        ],
+        link: 'https://219labs.vercel.app/'
+    },
+    {
+        image: proyecto9,
+        title: 'KTFCREW',
+        description: 'Proyecto de pagina indexada multiseccion, galeria de arte callejero.',
+        technologies: [
+            { name: 'HTML', icon: htmlIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon },
+        ],
+        link: 'https://ktfcrew.vercel.app/'
+    },
+    {
+        image: proyecto10,
+        title: 'Magnoly',
+        description: 'Proyecto para pasteleria artesanal Magnoly, desarrollada con React JS, utilice GSAP, Scrolltrigger, Lenis y Swipper.',
+        technologies: [
+            { name: 'React', icon: reactIcon },
+            { name: 'CSS', icon: cssIcon },
+            { name: 'Javascript', icon: jsIcon },
+            { name: 'GSAP', icon: gsapIcon },
+        ],
+        link: 'https://magnoly.vercel.app/'
     }
 ];
 
